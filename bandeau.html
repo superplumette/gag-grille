@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bannière</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: transparent;
+      }
+      .marquee {
+        font-size: 28px;
+        color: white;
+        white-space: nowrap;
+        animation: scroll-left 10s linear infinite;
+        font-family: sans-serif;
+      }
+      @keyframes scroll-left {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="marquee">⚠️ Arrêt du direct imminent.</div>
+  </body>
+</html>
